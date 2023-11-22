@@ -1,0 +1,369 @@
+/* NAVBAR */
+
+#uni-agendamento {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(#36bff2, #2196f3);
+    border-radius: 8px;
+    box-shadow: none;
+    text-transform: capitalize;
+}
+#uni-agendamento:hover {
+    opacity: 0.8;
+}
+#uni-nav {
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(184, 183, 183, 0.01);
+    border-bottom-width: thick;
+    border-color: #dc0058;
+    border-bottom-style: solid;
+}
+
+#uni-logo {
+    width: 150px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+.unikids-img img {
+    width: 100%;
+}
+
+.uni-noticias {
+    padding: 75px 0 75px 0;
+    text-align: center;
+    color: #222222;
+    font-size: 50px;
+}
+.uni-light {
+    padding: 5px;
+    font-style: light;
+    border-top: thick solid;
+    border-color: #36bff2;
+}
+.uni-bold {
+    padding: 5px;
+    font-weight: 700;
+    font-style: italic;
+    border-bottom-width: thick;
+    border-color: #dc0058;
+    border-bottom-style: solid;
+}
+
+/* BANNER LATERAL */
+#imagemlateral {
+    padding-top: 50px;
+}
+
+/* GRID */
+.grid-container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+
+}
+
+.grid-item {
+    padding: 10px;
+    text-align: center;
+}
+
+/* NREADCRUMB */
+.breadcrumb {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+
+.breadcrumb::before {
+    content: none;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: hwb(204 20% 14%);
+    transition: color 0.3s ease;
+    margin: 0 -5px;
+}
+
+.breadcrumb a:hover {
+    color: #d91c8a;
+}
+
+.breadcrumb span {
+    color: #555;
+    margin: 5px;
+}
+
+/* TITULO */
+#texttitulo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 15px 0 20px 0;
+    font-size: 50px;
+    color: hwb(204 20% 14%);
+}
+
+#linhafoto {
+    margin-top: 2px;
+    width: 60%;
+    text-align: center;
+}
+
+#data {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+#imagem1 {
+    width: 100%;
+    height: auto;
+}
+
+#paragrafo01 {
+    width: 100%;
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.footer-page {
+    border: #d0d0d0 solid 1px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.c1 {
+    font-family: 'Raleway', sans-serif;
+    color: #555;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.compartilhar {
+    float: left;
+}
+
+.redes {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.redes a:hover img {
+    opacity: 0.8;
+}
+
+.redes a {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.btn_rede_social img {
+    width: 20px;
+    height: 20px;
+}
+
+
+.redes a:hover img {
+    opacity: 0.8;
+}
+
+.redes a {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.btn_rede_social img {
+    width: 20px;
+    height: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    gap: 10px;
+    width: 100%; 
+}
+
+.imagemcard {
+    width: 250px;
+    height: auto;
+
+}
+
+.card-1 {
+    width: 250px;
+    height: 160px;
+    margin: 5px;
+    background-color: #ffff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7);
+}
+
+.card-header {
+    width: 250px;
+    height: 120px;
+    overflow: hidden;
+}
+
+.card-footer {
+    height: 20px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Product Sans', sans-serif;
+    background-color: white;
+}
+
+.card-footer a {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.card-1:hover {
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+/* Rodapé */
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    color: white;
+}
+.footer-botton {
+    display: flex;
+    text-align: center;
+    padding: 70px 150px;
+}
+
+#botaofooter {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(#36bff2, #2196f3);
+    border-radius: 8px;
+    box-shadow: none;
+    text-transform: capitalize;
+}
+
+#modal {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: #2196f3;
+    border-radius: 8px;
+    box-shadow: none;
+    text-transform: capitalize;
+}
+#footer-content {
+    background-color: #dc0058;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px 50px;
+}
+#footer-contacts h1{
+    margin-bottom: 12px;
+}
+#footer-social-links {
+    display: flex;
+    gap: 32px;
+    margin-top: 24px;
+}
+#footer-social-links .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+#footer-social-links .footer-link ion-icon {
+    font-size: 22px;
+}
+#footer-social-links .footer-link:hover{
+    opacity: 0.8;
+}
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+#facebook {
+    background: #4267b3;
+}
+#whatsapp {
+    background: #25d366
+}
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.footer-list .footer-link {
+    color: white;
+    transition: all 0.4s;
+}
+.footer-list .footer-link:hover {
+    color: #2196f3;
+}
+#footer-subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+#input-group {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 205, 213);
+    border-radius: 4px;
+}
+#input-group input {
+    all: unset;
+    padding: 12px;
+    width: 100%;
+}
+#input-group button{
+    background-color: #2196f3;
+    border: none;
+    color: white;
+    padding: 0 20px;
+    font-size: 18px;
+    height: 100%;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+#input-group button:hover {
+    opacity: 0.8;
+}
+#footer-copyright {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-weight: 100;
+}
+
+@media only screen and (max-width: 600px) {
+    #elemento1 {
+        display: none; /* Ou qualquer outra propriedade que você deseje */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 100%; /* Uma coluna em telas menores */
+    }
+}

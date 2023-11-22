@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniKids</title>
+    <link rel="icon" type="image/x-icon" href="uni-imagens/Uni-Kids.ico">
+    <link rel="stylesheet" type="text/css" href="unikids.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+
+<!--Scroll-->
+
+<article>
+  <button class="uniscroll" onclick="backTop();">
+    <img src="./arrow.svg" alt="">
+  </button>
+</article>
+<!--Navbar-->
+
+    <div class="navbar-fixed">
+    <nav id="uni-nav">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo"><img src="https://i.postimg.cc/5NgQ5j4p/Uni-Kids-02.png" id="uni-logo"></a>
+            <ul class="right hide-on-med-and-down" style="margin-right: 50px;">
+                <li><a class="black-text" href="./unikids.html">Início</a></li>
+                <li><a class="black-text" href="./institucional.html.html">Institucional</a></li>
+                <li><a class="black-text" href="noticias.html">Notícias</a></li>
+                <li><a class="white-text btn" id="uni-agendamento" href="./index-agendamento.html">Agende uma Visita</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!-- Carrossel -->
+<div class="unikids-img">
+    <div class="carousel carousel-slider">
+        <a class="carousel-item" href="#one!"><img src="uni-imagens/03.png"></a>
+        <a class="carousel-item" href="#two!"><img src="uni-imagens/02.png"></a>
+        <a class="carousel-item" href="#three!"><img src="uni-imagens/01.png"></a>
+        <!-- Navigation Arrows -->
+        <div class="nav-arrows">
+            <a class="carousel-arrow left" href="#"><i class="material-icons">chevron_left</i></a>
+            <a class="carousel-arrow right" href="#"><i class="material-icons">chevron_right</i></a>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems, {
+            fullWidth: true,
+            indicators: true 
+        });
+
+        function autoplay() {
+            instances[0].next();
+        }
+
+        var autoplayInterval = setInterval(autoplay, 4000); // Change the interval as needed (in milliseconds)
+
+        $('.carousel-arrow.left').click(function (e) {
+            e.preventDefault();
+            instances[0].prev();
+            clearInterval(autoplayInterval); // Stop autoplay on manual navigation
+        });
+
+        $('.carousel-arrow.right').click(function (e) {
+            e.preventDefault();
+            instances[0].next();
+            clearInterval(autoplayInterval); // Stop autoplay on manual navigation
+        });
+    });
+</script>
+
+
+<!--Noticias-->
+    <div class="uni-noticias">
+        <span class="uni-light">ÚLTIMAS</span>
+        <span class="uni-bold">NOTÍCIAS</span>
+    </div>
+
+    <div class="uni-card">
+        <span id="uni-ensino">Ensino</span>
+        <span id="uni-infantil">Infantil</span><br><br>
+    </div>
+
+<!--Cards-->
+<div class="container">
+  <div class="card-uni">
+      <a href="oficina_de_Inteligencia copy.html">
+      <div class="card-header">
+          <img src="./uni-imagens/kid.jpg" class="card-img"/>
+      </div>
+      </a>
+      <div class="card-footer">
+          <a href="oficina_de_Inteligencia copy.html">Oficina de Inteligência</a>
+      </div>
+  </div>
+  <div class="card-uni">
+      <div class="card-header">
+          <a href="dia_da_leitura.html">
+              <img src="./uni-imagens/kid2.png" class="card-img" alt="Descrição da imagem 1"/>
+          </a>
+      </div>
+      <div class="card-footer">
+          <a href="dia_da_leitura.html">Dia de Leitura</a>
+      </div>
+  </div>
+  
+  <div class="card-uni">
+      <div class="card-header">
+          <a href="oficina_de_Inteligencia copy.html">
+              <img src="./uni-imagens/kid4.jpg" class="card-img" alt="Descrição da imagem 2"/>
+          </a>
+      </div>
+      <div class="card-footer">
+          <a href="oficina_de_Inteligencia copy.html">Dia dos Professores</a>
+      </div>
+  </div>        
+</div><br>
+
+<div class="uni-card-f">
+  <span id="uni-ensino-f">Ensino</span>
+  <span id="uni-fundamental">Fundamental</span><br><br>
+</div>
+
+<div class="container">
+  <div class="card-uni">
+      <div class="card-header">
+          <a href="halloween.html">
+              <img src="./uni-imagens/kid3.jpg" class="card-img" alt="Descrição da imagem 3"/>
+          </a>
+      </div>
+      <div class="card-footer">
+          <a href="halloween.html">Festa de Halloween</a>
+      </div>
+  </div>
+  
+  <div class="card-uni">
+      <div class="card-header">
+          <a href="exploracao_cientifica.html">
+              <img src="./uni-imagens/kid_cientifico1.jpg" class="card-img" alt="Descrição da imagem 4"/>
+          </a>
+      </div>
+      <div class="card-footer">
+          <a href="exploracao_cientifica.html">Exploração Científica</a>
+      </div>
+  </div>
+  
+  <div class="card-uni">
+      <div class="card-header">
+          <a href="cultural.html">
+              <img src="./uni-imagens/kid_cultural1.jpg" class="card-img" alt="Descrição da imagem 5"/>
+          </a>
+      </div>
+      <div class="card-footer">
+          <a href="cultural.html">Competições Culturais</a>
+      </div>
+  </div>
+</div><br>
+
+<div class="uni-card-m">
+  <span id="uni-ensino-m">Ensino</span>
+  <span id="uni-medio">Médio</span><br><br>
+</div>
+
+<div class="container">
+  <div class="card-uni">
+      <div class="card-header">
+          <a href="forro.html">
+              <img src="./uni-imagens/kid5.jpg" class="card-img" alt="Descrição da imagem 5"/>
+          </a>
+      </div>
+      <div class="card-footer">
+          <a href="forro.html">Forró da UniKids</a>
+      </div>
+  </div>
+  
+  <div class="card-uni">
+      <div class="card-header">
+          <a href="exposicience.html">
+              <img src="./uni-imagens/kid6.jpg" class="card-img" alt="Descrição da imagem 6"/>
+          </a>
+      </div>
+      <div class="card-footer">
+          <a href="exposicience.html">Exposcience</a>
+      </div>
+  </div>
+  
+  <div class="card-uni">
+      <div class="card-header">
+          <a href="piqueniqueterceirão.html">
+              <img src="./uni-imagens/kid_piquenique.jpg" class="card-img" alt="Descrição da imagem 7"/>
+          </a>
+      </div>
+      <div class="card-footer">
+          <a href="piquenique Terceirão.html">Piquenique Terceirão</a>
+      </div>
+  </div>
+  
+</div><br>
+
+<div class="uni-card-v">
+  <span id="uni-ensino-v">Pré</span>
+  <span id="uni-vestibular">Vestibular</span><br><br>
+</div>
+
+<div class="container">
+  <div class="card-uni">
+      <div class="card-header">
+          <a href="forum.html">
+              <img src="./uni-imagens/kid7.jpg" class="card-img" alt="Descrição da imagem 7"/>
+          </a>
+      </div>
+      <div class="card-footer">
+          <a href="forum.html">Fórum de Ciências da Natureza</a>
+      </div>
+  </div>
+  
+  <div class="card-uni">
+      <div class="card-header">
+          <a href="aulabar.html">
+              <img src="./uni-imagens/kid8.jpg" class="card-img" alt="Descrição da imagem 8"/>
+          </a>
+      </div>
+      <div class="card-footer">
+          <a href="Aulabar.html">AulaBar no Espaço Villa Beer</a>
+      </div>
+  </div>
+  
+  <div class="card-uni">
+      <div class="card-header">
+          <a href="Aulabar.html">
+              <img src="./uni-imagens/kid_solidarios01.jpg" class="card-img" alt="Descrição da imagem 9"/>
+          </a>
+      </div>
+      <div class="card-footer">
+          <a href="projetos_solidarios.html">Aulão Solidário</a>
+      </div>
+  </div>
+  
+</div><br>
+
+      <!--Rodapé-->
+
+      <footer>
+        <div id="footer-content">
+          <div id="footer-contacts">
+            <img src="https://i.postimg.cc/wv7cT8cz/Mask-group.png" style="width: 150px; height: 50px;">
+            <p>Construir o conhecimento, estimulando a criatividade<br>
+              cidadania e solidariedade. Esssa é a nossa missão.</p>
+            <div id="footer-social-links">
+              <a href="#" class="footer-link" id="instagram">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+              <a href="#" class="footer-link" id="whatsapp">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </a>
+              <a href="#" class="footer-link" id="facebook">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </div>
+          </div>
+          <div class="footer-botton">
+            <a class="waves-effect waves-light btn modal-trigger" id="botaofooter" href="#modal1">&nbsp;&nbsp;Alunos&nbsp;&nbsp;</a>
+            <div id="modal1" class="modal">
+                <div class="modal-content" id="modal">
+                    <h4>Alunos</h4>
+                    <p>Lucas Silva<br>
+                        David Tavares<br>
+                        Samara Machado
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green btn" id="botaofooter">OK!</a>
+                </div>
+            </div>
+        
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    var elems = document.querySelectorAll('.modal');
+                    var instances = M.Modal.init(elems, {});
+                });
+        
+                $(document).ready(function () {
+                    $('.modal').modal();
+                });
+            </script>
+        </div>
+        
+          <div id="footer-subscribe">
+            <h3>Se Inscreva</h3>
+            <p>Digite seu e-mail para ser notificado sobre a instituição</p>
+            <div id="input-group">
+              <input type="email" id="email">
+              <button>
+                <ion-icon name="mail-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="footer-copyright">
+          Criado Por <ion-icon name="heart-outline"></ion-icon>
+          UniTech
+        </div>
+      </footer>
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="./unikids.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

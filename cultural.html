@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniKids</title>
+    <link rel="icon" type="image/x-icon" href="uni-imagens/Uni-Kids.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="noticias.css">
+</head>
+<body>
+    <body>
+    <!--Navbar-->
+    <div class="navbar-fixed">
+      <nav id="uni-nav">
+          <div class="nav-wrapper">
+              <a href="#" class="brand-logo"><img src="https://i.postimg.cc/5NgQ5j4p/Uni-Kids-02.png" id="uni-logo"></a>
+              <ul class="right hide-on-med-and-down" style="margin-right: 50px;">
+                  <li><a class="black-text" href="./unikids.html">Início</a></li>
+                  <li><a class="black-text" href="./institucional.html.html">Institucional</a></li>
+                  <li><a class="black-text" href="noticias.html">Notícias</a></li>
+                  <li><a class="white-text btn" id="uni-agendamento" href="./index-agendamento.html">Agendamento</a></li>
+              </ul>
+          </div>
+      </nav>
+    </div>
+    <!-- Grid Container -->
+    <div class="grid-container">
+        <!-- Conteúdo Principal -->
+        <div class="grid-item">
+            <!-- Breadcrumb -->
+            <br><br>
+            <div class="breadcrumb">
+                <span>Você está em:</span>
+                <a href="unikids.html">Colégio UniKids</a>
+                <span>»</span>
+                <a href="noticias.html">Notícias</a>
+                <span>»</span>
+                <a href="cultural.html">Competições Culturais</a>
+            </div>
+
+            <!-- Título -->
+            <h1 id="texttitulo">Competições Culturais</h1>
+
+            <!-- Linha -->
+            <hr id="linhafoto">
+            <!-- Imagem 1 -->
+            <br><br>
+            <img id="imagem1" src="uni-imagens/kid_cultural1.jpg" alt="imagem1">
+
+            <!-- Texto da Notícia -->
+            <br><br><br>
+            <p id="paragrafo01">
+                Feira do Conhecimento III JUFAIR aconteceu nesta quarta-feira, dia 10, na escola Unikids. O evento contou com temas-chave
+                para o aprendizado do aluno. A feira deste ano contou com a participação de alunos, pais e professores para que juntos
+                aborderem o tema da saúde. A 3ª edição teve apresentações de capoeira, teatro, serviços odontológicos da UNITAU, apresentações
+                dos trabalhos desenvolvidos pelos alunos ao longo do calendário escolar. A diretora Gabriela Antônia acredita que o evento
+                estimula os quatro pilares da educação que seria aprender a aprender, aprender a viver e conviver, aprender a ser e a
+                valorização da autoestima.
+
+             <!-- Carrossel -->
+             <div class="container">
+              <div class="carousel">
+                 <a class="carousel-item" href="#one!">
+                    <img src="uni-imagens/kid_cultural1.jpg">
+                 </a>
+                 <a class="carousel-item" href="#two!">
+                    <img src="uni-imagens/kid_cultural2.jpg">
+                 </a>
+                 <a class="carousel-item" href="#three!">
+                    <img src="uni-imagens/kid_cultural3.jpg">
+                 </a>
+                 <!-- Adicione mais imagens conforme necessário -->
+              </div>
+            </div>
+
+            <!-- Scripts -->
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $('.carousel').carousel({
+                        numVisible: 3, // Número de itens visíveis ao mesmo tempo
+                        dist: -50, // Espaçamento entre os itens
+                    });
+                });
+            </script>
+
+            <!-- Compartilhamento -->
+            <footer class="footer-page">
+              <div class="container">
+                  <div class="compartilhar">
+                      <span class="c1">Compartilhar</span>
+                  </div>
+                  <div class="redes">
+                      <a class="btn_rede_social" href="#" target="_blank"><img src="uni-imagens/facebook.png" alt="Facebook"></a>
+                      <a class="btn_rede_social" href="#" target="_blank"><img src="uni-imagens/instagram.png" alt="Instagram"></a>
+                      <a class="btn_rede_social" href="#" target="_blank"><img src="uni-imagens/twitter.png" alt="Twitter"></a>
+                  </div>
+              </div>
+            </footer>
+
+            <!-- Título Abaixo da Notícia -->
+            <br>
+            <h2 id="texttitulo">Veja Também</h2>
+            <br>
+
+            <!-- Linha -->
+            <hr id="linhafoto">
+            <br><br>
+            
+            <div class="container">
+                <!-- First Row -->
+                <div class="card-1">
+                    <!-- card header -->
+                    <a href="dia_da_leitura.html">
+                        <div class="card-header">
+                            <img class="imagemcard" src="./uni-imagens/kid2.png" class="card-image"/>
+                        </div>
+                    </a>
+                    <!--card footer-->
+                    <div class="card-footer">
+                        <a href="dia_da_leitura.html">Dia da Leitura</a>
+                    </div>
+                </div>
+            
+                <div class="card-1">
+                    <!-- card header -->
+                    <a href="halloween.html">
+                        <div class="card-header">
+                            <img class="imagemcard" src="./uni-imagens/kid3.jpg" class="card-image"/>
+                        </div>
+                    </a>
+                    <!--card footer-->
+                    <div class="card-footer">
+                        <a href="halloween.html">Festa de Halloween</a>
+                    </div>
+                </div>
+            
+                <div class="card-1">
+                    <!-- card header -->
+                    <a href="forum.html">
+                        <div class="card-header">
+                            <img class="imagemcard" src="./uni-imagens/kid7.jpg" class="card-image"/>
+                        </div>
+                    </a>
+                    <!--card footer-->
+                    <div class="card-footer">
+                        <a href="forum.html">Forum de Ciências da Natureza</a>
+                    </div>
+                </div>
+            
+                <!-- Second Row -->
+                <div class="card-1">
+                    <!-- card header -->
+                    <a href="professor.html">
+                        <div class="card-header">
+                            <img class="imagemcard" src="./uni-imagens/kid4.jpg" class="card-image"/>
+                        </div>
+                    </a>
+                    <!--card footer-->
+                    <div class="card-footer">
+                        <a href="professor.html">Dia dos Professores</a>
+                    </div>
+                </div>
+            
+                <div class="card-1">
+                    <!-- card header -->
+                    <a href="forro.html">
+                        <div class="card-header">
+                            <img class="imagemcard" src="./uni-imagens/kid5.jpg" class="card-image"/>
+                        </div>
+                    </a>
+                    <!--card footer-->
+                    <div class="card-footer">
+                        <a href="forro.html">Forró da UniKids</a>
+                    </div>
+                </div>
+            
+                <div class="card-1">
+                    <!-- card header -->
+                    <a href="exposicience.html">
+                        <div class="card-header">
+                            <img class="imagemcard" src="./uni-imagens/kid6.jpg" class="card-image"/>
+                        </div>
+                    </a>
+                    <!--card footer-->
+                    <div class="card-footer">
+                        <a href="exposicience.html">EXPOSCIENCE</a>
+                    </div>
+                </div>
+            </div>            
+            
+        </div>
+
+        <div class="grid-item" id="elemento1">
+            <img id="imagemlateral" src="uni-imagens/bannerlateral.png" alt="">
+        </div>
+    </div>
+    <br><br>
+      <!--Rodapé-->
+
+      <footer>
+        <div id="footer-content">
+          <div id="footer-contacts">
+            <img src="https://i.postimg.cc/wv7cT8cz/Mask-group.png" style="width: 150px; height: 50px;">
+            <p>Construir o conhecimento, estimulando a criatividade<br>
+              cidadania e solidariedade. Esssa é a nossa missão.</p>
+            <div id="footer-social-links">
+              <a href="#" class="footer-link" id="instagram">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+              <a href="#" class="footer-link" id="whatsapp">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </a>
+              <a href="#" class="footer-link" id="facebook">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </div>
+          </div>
+          <div class="footer-botton">
+            <a class="waves-effect waves-light btn modal-trigger" id="botaofooter" href="#modal1">&nbsp;&nbsp;Alunos&nbsp;&nbsp;</a>
+            <div id="modal1" class="modal">
+                <div class="modal-content" id="modal">
+                    <h4>Alunos</h4>
+                    <p>Lucas Silva<br>
+                        David Tavares<br>
+                        Samara Machado
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green btn" id="botaofooter">OK!</a>
+                </div>
+            </div>
+        
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    var elems = document.querySelectorAll('.modal');
+                    var instances = M.Modal.init(elems, {});
+                });
+        
+                $(document).ready(function () {
+                    $('.modal').modal();
+                });
+            </script>
+        </div>
+        
+          <div id="footer-subscribe">
+            <h3>Se Inscreva</h3>
+            <p>Digite seu e-mail para ser notificado sobre a instituição</p>
+            <div id="input-group">
+              <input type="email" id="email">
+              <button>
+                <ion-icon name="mail-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="footer-copyright">
+          Criado Por <ion-icon name="heart-outline"></ion-icon>
+          UniTech
+        </div>
+      </footer>
+    
+
+    <!-- JavaScript no final do corpo para carregamento otimizado -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body * {
+    font-family: "Inter", sans-serif;
+}
+#uni-agendamento {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(#36bff2, #2196f3);
+    border-radius: 8px;
+    box-shadow: none;
+    text-transform: capitalize;
+}
+#uni-agendamento:hover {
+    opacity: 0.8;
+}
+#uni-nav {
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(184, 183, 183, 0.01);
+    border-bottom-width: thick;
+    border-color: #dc0058;
+    border-bottom-style: solid;
+}
+
+#uni-logo {
+    width: 150px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+.visita-container {
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-left: 100px;   
+    margin-right: 100px;
+    margin-bottom: 50px;
+    align-content: center;
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+
+.img-conteiner {
+    text-align: center;
+}
+
+img:hover {
+    opacity: 0.8;
+}
+
+#titlevisita {
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#instuni {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 50px;
+    margin-left: 100px;   
+    margin-right: 100px;
+    align-content: center;
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+
+.btn {
+    font-family: 'Raleway', sans-serif;
+    background-color: #2196f3;
+    border-radius: 10px;
+    box-shadow: none;
+    text-transform: capitalize;
+}
+
+.btn:hover {
+    font-family: 'Raleway', sans-serif;
+    background-color: #64b5f6;
+}
+
+.linhanav {
+    border-bottom-width: thick;
+    border-color: pink;
+    border-bottom-style: solid;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+}
+
+#btnform {
+    font-family: 'Raleway', sans-serif;
+    background-color: #2196f3;
+    text-transform: capitalize;
+    box-shadow: none;
+    border: 1px solid #fff;
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#btnform:hover {
+    font-family: 'Raleway', sans-serif;
+    background-color: #0962aa;
+    text-transform: capitalize;
+    box-shadow: none;
+    border: 1px solid #fff;
+}
+
+.form-unikids {
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    width: 100%;
+}
+
+#name, #email, #telefone, #sugestao {
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(184, 183, 183, 0.1);
+}
+
+.imgform {
+    margin-top: 13px;
+}
+
+/* Rodapé */
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    color: white;
+}
+.footer-botton {
+    display: flex;
+    text-align: center;
+    padding: 70px 150px;
+}
+
+#botaofooter {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(#36bff2, #2196f3);
+    border-radius: 8px;
+    box-shadow: none;
+    text-transform: capitalize;
+}
+
+#modal {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: #2196f3;
+    border-radius: 8px;
+    box-shadow: none;
+    text-transform: capitalize;
+}
+#footer-content {
+    background-color: #dc0058;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px 50px;
+}
+#footer-contacts h1{
+    margin-bottom: 12px;
+}
+#footer-social-links {
+    display: flex;
+    gap: 32px;
+    margin-top: 24px;
+}
+#footer-social-links .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+#footer-social-links .footer-link ion-icon {
+    font-size: 22px;
+}
+#footer-social-links .footer-link:hover{
+    opacity: 0.8;
+}
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+#facebook {
+    background: #4267b3;
+}
+#whatsapp {
+    background: #25d366
+}
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.footer-list .footer-link {
+    color: white;
+    transition: all 0.4s;
+}
+.footer-list .footer-link:hover {
+    color: #2196f3;
+}
+#footer-subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+#input-group {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 205, 213);
+    border-radius: 4px;
+}
+#input-group input {
+    all: unset;
+    padding: 12px;
+    width: 100%;
+}
+#input-group button{
+    background-color: #2196f3;
+    border: none;
+    color: white;
+    padding: 0 20px;
+    font-size: 18px;
+    height: 100%;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+#input-group button:hover {
+    opacity: 0.8;
+}
+#footer-copyright {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+    #footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+@media screen and (max-width: 426px) {
+    #footer-content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+    
+}
